@@ -6,16 +6,23 @@
 <div class="bg-white">
 
 <title>GSCT | COURSE ENQUIRY</title>
-<div class="card card-body bg-light col-sm-5 col-md-5 col-lg-5 " id="mrgin-top" style="margin-left:350px;">
-    <h1 align=center>Enrollment Form</h1>
+<!-- <div class="card card-body bg-light col-sm-4 col-md-5 col-lg-4" id="mrgin-top"> -->
+  <div class="card" style="width: 21rem; margin-top:150px;">
+    <div class="card-body">
+
+    <h2 align=center>Enrollment Form</h2>
     <form method="post" enctype="multipart/form-data">
       <table>
         {{ form.as_table }}
-    </table>
       {% csrf_token %}
-      <input type="submit" class="btn btn-lg btn-info btn-block" value="Submit">
+    </table>
+      <input type="submit" class="btn btn-sm btn-info" value="Submit">
     </form>
 </div>
 
 </div>
+
+
+
+
 {% endblock %}

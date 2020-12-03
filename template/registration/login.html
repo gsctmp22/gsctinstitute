@@ -11,20 +11,24 @@
   display: flex;
   justify-content: space-between;
 }
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </style>
 
-<div class="container" style="color:black; font-size:15px; margin-top:150px;">
-<!-- <div class="row justify-content-center"> -->
-   <div class="col-lg-5" style=" margin-left:450px;">
-  <form method="post">
+
+
+<div class="card" style="width: 18rem; margin-top:150px;">
+  <div class="card-body">
     <h4 style="color:black;">Admin Login</h4>
-<table>
-    {{form.as_table}}
-    {% csrf_token %}
-  </table>
-    <br><input type="submit" class="btn btn-outline-info" name="" value="Log-In">
+  <form class=""  method="post">
+    <table>
+        {{form.as_table}}
+        {% csrf_token %}
+      </table>
+      <input type="submit" class="btn btn-outline-info" name="" value="Log-In">
   </form>
+  </div>
 </div>
-</div>
+
 
 {% endblock %}
