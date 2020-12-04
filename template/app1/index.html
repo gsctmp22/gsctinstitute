@@ -64,7 +64,7 @@
 
 <!-- ========================admin Login+=========================   -->
           {% if not request.user.is_authenticated %}
-            <a href="/accounts/login"><span class="fa fa-sign-in"></span> Login As Admin</a>
+            <a href="/accounts/login"><span class="fa fa-sign-in"></span> Login</a>
           {% endif %}
 
           {% if request.user.is_authenticated %}
