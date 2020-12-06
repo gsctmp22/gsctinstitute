@@ -29,7 +29,7 @@ urlpatterns = [
     path('course-details/', views.CourseDetails),
     path('contact-us/', views.Contact.as_view(), name = 'contact'),
 
-    path("robots.txt", TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),
+    path('robots.txt/', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),
 ),
 
 
@@ -42,7 +42,7 @@ urlpatterns = [
         path('networking/', views.Networking, name='networking'),
         path('website-development/', views.WebsiteDevelopment, name='website-development'),
 
-        path('map/', views.default_map, name='map'),
+       
 
 # ==================================Admin Login===================================
     path('accounts/', include('django.contrib.auth.urls')),
