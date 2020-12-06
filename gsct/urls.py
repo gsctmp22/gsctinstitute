@@ -42,6 +42,7 @@ urlpatterns = [
         path('networking/', views.Networking, name='networking'),
         path('website-development/', views.WebsiteDevelopment, name='website-development'),
 
+       
 
 # ==================================Admin Login===================================
     path('accounts/', include('django.contrib.auth.urls')),
