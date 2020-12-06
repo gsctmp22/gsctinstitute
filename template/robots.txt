@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+Disallow: /contactenqlist/
+Disallow: /serviceenqlist/
+Disallow: /courseenqlist/
+Disallow: /deletecontactenq/
+Disallow: /deletecourseenq/
+Disallow: /deleteserviceenq/
